@@ -2,13 +2,14 @@
 
 cmake build scripts for cross compiling PCL and its dependencies for Android and iOS.
 
-## Requirements for iOS
+##  iOS
 
+### Requirements
 - Homebrew - http://brew.sh
 - Xcode (latest)
 - cmake - `brew install cmake`
 
-### Building for iOS on OSX
+### Building
 
 ```sh
 git clone git@github.com:CambrianTech/pcl-superbuild.git
@@ -27,14 +28,14 @@ ccmake ../pcl-superbuild/
 make -j8
 ```
 
+## Android
 
-
-## Requirements for Android
+## Requirements
 
 - Android NDK, Revision 8d
 - Android SDK (unsure about specific version)
 
-### Building for Android
+### Building
 
 ```sh
     $ mkdir build && cd build
