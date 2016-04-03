@@ -24,8 +24,7 @@ ccmake ../pcl-superbuild/
 - press `g` to generate
 
 ```sh
-# make -j<number-of-cores>
-make -j8
+make -j`sysctl -n hw.ncpu`
 ```
 
 ## Android
@@ -38,8 +37,8 @@ make -j8
 ### Building
 
 ```sh
-    $ mkdir build && cd build
-    $ cmake -DBUILD_IOS_DEVICE:BOOL="OFF" ../
-    $ export ANDROID_NDK=${PATH_TO_ANDROID_NDK_R8}
-    $ make
+mkdir build && cd build
+cmake -DBUILD_IOS_DEVICE:BOOL="OFF" ../
+export ANDROID_NDK=${PATH_TO_ANDROID_NDK_R8}
+make
 ```
