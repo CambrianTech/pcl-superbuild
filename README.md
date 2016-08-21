@@ -12,7 +12,7 @@ cmake build scripts for cross compiling PCL and its dependencies for Android and
 ### Building
 
 ```sh
-git clone git@github.com:CambrianTech/pcl-superbuild.git
+git clone git@github.com:joeblau/pcl-superbuild.git
 mkdir build
 cd build
 ccmake ../pcl-superbuild/
