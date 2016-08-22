@@ -148,7 +148,7 @@ macro(fetch_boost)
   ExternalProject_Add(
     boost-fetch
     SOURCE_DIR ${source_prefix}/boost
-    GIT_REPOSITORY git://github.com/CambrianTech/boost-build
+    GIT_REPOSITORY git://github.com/joeblau/boost-build
     GIT_TAG origin/master
     CONFIGURE_COMMAND ""
     BUILD_COMMAND ""
